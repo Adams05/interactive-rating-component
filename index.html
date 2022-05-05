@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass" />
+
+    <title>Interactive Rating Component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="star">
+          <img src="images/icon-star.svg" alt="star icon" />
+        </div>
+        <div class="text-section">
+          <h3 class="title">How did we do?</h3>
+          <p class="paragraph-text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="rating-section" id="ratingSection">
+          <button class="rating-btn" id="ratingBtn" value="1">1</button>
+          <button class="rating-btn" id="ratingBtn" value="2">2</button>
+          <button class="rating-btn" id="ratingBtn" value="3">3</button>
+          <button class="rating-btn" id="ratingBtn" value="4">4</button>
+          <button class="rating-btn" id="ratingBtn" value="5">5</button>
+        </div>
+        <button type="submit" class="submit-btn" onclick="submit()">
+          SUBMIT
+        </button>
+      </div>
+      <div class="thank-you-card hide">
+        <img src="images/illustration-thank-you.svg" alt="Phone image" />
+        <div class="rating-div"></div>
+        <h3 class="title">Thank you!</h3>
+        <p class="paragraph-text">
+          We appreciate you taking the time to give a rating. if you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
